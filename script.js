@@ -1,14 +1,14 @@
-function saludar() {
+function Hola() {
     alert("Hola, Bienvenido a la Calculadora");
 }
 
 function suma() {
     let num1 = parseFloat(document.getElementById("num1").value);
     let num2 = parseFloat(document.getElementById("num2").value);
-    
-    resultado = num1 + num2;
 
-    document.getElementById("resultado").innerHTML = resultado;
+    resultado = num1 + num2;        
+
+   document.getElementById("resultado").innerText = "Resultado: " + resultado;
 }
 
 function resta() {
@@ -17,7 +17,7 @@ function resta() {
     
     resultado = num1 - num2;
 
-    document.getElementById("resultado").innerHTML = resultado;
+    document.getElementById("resultado").innerText = "Resultado: " + resultado;
 }
 
 function multiplicacion() {
@@ -26,7 +26,7 @@ function multiplicacion() {
     
     resultado = num1 * num2;
 
-    document.getElementById("resultado").innerHTML = resultado;
+    document.getElementById("resultado").innerText = "Resultado: " + resultado;
 }
 
 function division() {
@@ -35,9 +35,9 @@ function division() {
 
     if (num2 !== 0) {
         resultado = num1 / num2;
-        document.getElementById("resultado").innerHTML = resultado;
+        document.getElementById("resultado").innerText = "Resultado: " + resultado;
     } else {
-        document.getElementById("resultado").innerHTML = "Error: División por cero";
+        document.getElementById("resultado").innerText = "Error: División por cero";
     }
 }
 
@@ -47,7 +47,7 @@ function potencia() {
 
     resultado = Math.pow(num1, num2);
 
-    document.getElementById("resultado").innerHTML = resultado;
+    document.getElementById("resultado").innerText = "Resultado: " + resultado;
 }
 
 function raiz() {   
@@ -55,9 +55,9 @@ function raiz() {
 
     if (num1 >= 0) {
         resultado = Math.sqrt(num1);
-        document.getElementById("resultado").innerHTML = resultado;
+        document.getElementById("resultado").innerText = "Resultado: " + resultado;
     } else {
-        document.getElementById("resultado").innerHTML = "Error: Raíz cuadrada de un número negativo";
+        document.getElementById("resultado").innerText = "Error: Raíz cuadrada de un número negativo";
     
     }
 }
